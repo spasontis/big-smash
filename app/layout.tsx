@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Big Smash",
+  title: "Big Smash UK",
   description: "Freshly smashed burgers, creamy shakes, and the taste",
 };
 

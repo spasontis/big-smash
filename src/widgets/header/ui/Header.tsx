@@ -10,33 +10,32 @@ export const Header = () => {
   };
 
   return (
-    <header className="flex justify-between items-center px-4 min-h-[68px] border-b border-gray-500 bg-black fixed top-0 left-0 w-full z-50">
+    <header className="flex justify-between items-center px-4 min-h-[68px] border-b text-[#f1a123] border-gray-500 bg-black fixed top-0 left-0 w-full z-50">
       <button
         className="flex items-center"
         onClick={() => scrollToSection("home")}
       >
         <Image
-          src="/big-smash-logo.png"
+          src="/big-smash-label.png"
           alt="Big Smash"
-          width={220}
-          height={220}
-          sizes="46px"
-          className="h-10 w-auto"
+          width={620}
+          height={420}
+          className="h-8 w-auto"
         />
       </button>
 
-      <nav className="flex gap-16 absolute left-1/2 transform -translate-x-1/2 text-[#f1a123]">
-        <button
-          onClick={() => scrollToSection("breakfast")}
-          className="font-semibold hover:text-white transition-colors"
-        >
-          MENU
-        </button>
+      <nav className="flex gap-16 absolute left-1/2 transform -translate-x-1/2 ">
         <button
           onClick={() => scrollToSection("breakfast")}
           className="font-semibold hover:text-white transition-colors"
         >
           ABOUT US
+        </button>
+        <button
+          onClick={() => scrollToSection("reviews")}
+          className="font-semibold hover:text-white transition-colors"
+        >
+          REVIEWS
         </button>
         <button
           onClick={() => scrollToSection("contacts")}
@@ -46,7 +45,12 @@ export const Header = () => {
         </button>
       </nav>
 
-      <div className="w-10 md:w-[220px]" aria-hidden="true" />
+      <button
+        onClick={() => scrollToSection("menu")}
+        className="font-semibold text-white hover:text-[#f1a123] transition-colors"
+      >
+        MENU
+      </button>
     </header>
   );
 };
