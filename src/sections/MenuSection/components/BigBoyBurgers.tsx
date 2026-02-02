@@ -1,12 +1,60 @@
 export const BigBoyBurgers = () => {
+  const burgerItems = [
+    {
+      name: "THE BIG SMASH",
+      price: "8.49",
+      description:
+        "2 x Beff patties, brioche bun, lettuce, tomato, cheese, smash sause",
+    },
+    {
+      name: "THE SMASH STACK",
+      price: "11.49",
+      description:
+        "4 x Beff patties, brioche bun, lettuce, tomato, cheese, smash sause",
+    },
+    {
+      name: "THE SHROOM SMASH",
+      price: "8.99",
+      description:
+        "2 x Beff patties, brioche bun, lettuce, tomato, cheese, mushroom sauce",
+    },
+    {
+      name: "THE SMOOKIN SMASH",
+      price: "11.49",
+      description:
+        "2 x Beff patties, brioche bun, lettuce, tomato, cheese, smash sause",
+    },
+    {
+      name: "THE PULLED COW",
+      price: "10.99",
+      description:
+        "Pulled beef, lettuce, jalapenos, caramelized onion, cheese, smash sause",
+    },
+    {
+      name: "THE CLUCK SMASH",
+      price: "8.49",
+      description:
+        "2 x Smashed chicken patties, brioche bun, lettuce,grilled onion, tomato, cheese",
+    },
+    {
+      name: "THE CRISPY CLUCK",
+      price: "6.49",
+      description: "Chicken fillet, brioche bun, lettuce, mayo, cheese",
+    },
+    {
+      name: "THE OCEAN CATCH",
+      price: "6.49",
+      description: "Fish fillet, brioche bun, lettuce, mayo, cheese",
+    },
+    {
+      name: "THE VEGGIE CRUNCH",
+      price: "6.49",
+      description: "Veggie patty, brioche bun, lettuce, tomato",
+    },
+  ];
+
   return (
-    <div
-      className="text-white bg-[#f1a123] px-6 pt-2 pb-14"
-      style={{
-        clipPath:
-          "polygon(0 0, 100% 0, 100% calc(100% - 160px), 0% 100%, 0 calc(100% - 40px))",
-      }}
-    >
+    <div className="text-white bg-[#f1a123] px-4 pt-2 pb-14">
       <h2 className="text-3xl md:text-6xl font-extrabold text-center">
         BIG BOY
       </h2>
@@ -14,84 +62,15 @@ export const BigBoyBurgers = () => {
         BURGERS
       </h2>
       <ul>
-        <li>
-          <div className="flex justify-between md:text-3xl text-2xl font-semibold">
-            <h1>THE BIG SMASH</h1>
-            <p>8.49</p>
-          </div>
-          <p>
-            2 x Beff patties, brioche bun, lettuce, tomato, cheese, smash sause
-          </p>
-        </li>
-        <li>
-          <div className="flex justify-between md:text-3xl text-2xl font-semibold">
-            <h1>THE SMASH STACK</h1>
-            <p>11.49</p>
-          </div>
-          <p>
-            4 x Beff patties, brioche bun, lettuce, tomato, cheese, smash sause
-          </p>
-        </li>
-        <li>
-          <div className="flex justify-between md:text-3xl text-2xl font-semibold">
-            <h1>THE SHROOM SMASH</h1>
-            <p>8.99</p>
-          </div>
-          <p>
-            2 x Beff patties, brioche bun, lettuce, tomato, cheese, mushroom
-            sauce
-          </p>
-        </li>
-        <li>
-          <div className="flex justify-between md:text-3xl text-2xl font-semibold">
-            <h1>THE SMOOKIN SMASH</h1>
-            <p>11.49</p>
-          </div>
-          <p>
-            2 x Beff patties, brioche bun, lettuce, tomato, cheese, smash sause
-          </p>
-        </li>
-        <li>
-          <div className="flex justify-between md:text-3xl text-2xl font-semibold">
-            <h1>THE PULLED COW</h1>
-            <p>10.99</p>
-          </div>
-          <p>
-            Pulled beef, lettuce, jalapenos, caramelized onion, cheese, smash
-            sause
-          </p>
-        </li>
-        <li>
-          <div className="flex justify-between md:text-3xl text-2xl font-semibold">
-            <h1>THE CLUCK SMASH</h1>
-            <p>8.49</p>
-          </div>
-          <p>
-            2 x Smashed chicken patties, brioche bun, lettuce,grilled onion,
-            tomato, cheese
-          </p>
-        </li>
-        <li>
-          <div className="flex justify-between md:text-3xl text-2xl font-semibold">
-            <h1>THE CRISPY CLUCK</h1>
-            <p>6.49</p>
-          </div>
-          <p>Chicken fillet, brioche bun, lettuce, mayo, cheese</p>
-        </li>
-        <li>
-          <div className="flex justify-between md:text-3xl text-2xl font-semibold">
-            <h1>THE OCEAN CATCH</h1>
-            <p>6.49</p>
-          </div>
-          <p>Fish fillet, brioche bun, lettuce, mayo, cheese</p>
-        </li>
-        <li>
-          <div className="flex justify-between md:text-3xl text-2xl font-semibold">
-            <h1>THE VEGGIE CRUNCH</h1>
-            <p>6.49</p>
-          </div>
-          <p>Veggie patty, brioche bun, lettuce, tomato</p>
-        </li>
+        {burgerItems.map((item) => (
+          <li key={item.name}>
+            <div className="flex justify-between md:text-3xl text-2xl font-semibold">
+              <h1>{item.name}</h1>
+              <p>{item.price}</p>
+            </div>
+            <p>{item.description}</p>
+          </li>
+        ))}
       </ul>
     </div>
   );

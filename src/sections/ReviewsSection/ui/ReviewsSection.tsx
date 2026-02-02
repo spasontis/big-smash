@@ -33,14 +33,14 @@ export const ReviewsSection = () => {
         <h2 className="text-3xl md:text-7xl text-[#f1a123] font-extrabold text-center mb-8">
           REVIEWS
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+        <div className="flex flex-wrap justify-center gap-2 md:gap-6">
           {reviews.map((review, index) => (
             <div
               key={index}
-              className="p-8 text-white rounded-tr-[50px] rounded-bl-[50px] shadow-xl flex flex-col justify-between"
+              className="p-8 text-white rounded-tr-[50px] rounded-bl-[50px] shadow-xl flex flex-col justify-between w-full md:w-[calc(45%)] lg:w-[calc(30%)]"
             >
               <div>
-                <div className="flex justify-center mb-2">
+                <div className="flex justify-center">
                   {[...Array(review.stars)].map((_, i) => (
                     <svg
                       key={i}
@@ -51,7 +51,7 @@ export const ReviewsSection = () => {
                     </svg>
                   ))}
                 </div>
-                <p className="text-lg italic mb-2 leading-relaxed text-center">
+                <p className="text-lg italic leading-relaxed text-center">
                   &ldquo;{review.text}&rdquo;
                 </p>
               </div>
