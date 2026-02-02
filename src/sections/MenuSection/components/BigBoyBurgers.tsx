@@ -54,7 +54,7 @@ export const BigBoyBurgers = () => {
   ];
 
   return (
-    <div className="text-white bg-[#f1a123] px-4 pt-2 pb-14">
+    <div className="text-white bg-[#f1a123] px-4 md:px-8 pt-2 pb-14">
       <h2 className="text-3xl md:text-6xl font-extrabold text-center">
         BIG BOY
       </h2>

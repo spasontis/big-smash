@@ -20,18 +20,13 @@ export const Header = () => {
         className="flex items-center"
         onClick={() => scrollToSection("home")}
       >
-        <span className="md:hidden">
-          <Home className="w-8 h-8" />
-        </span>
-        <span className="hidden md:block">
-          <Image
-            src="/big-smash-label.png"
-            alt="Big Smash"
-            width={620}
-            height={420}
-            className="h-8 w-auto"
-          />
-        </span>
+        <Image
+          src="/big-smash-label.png"
+          alt="Big Smash"
+          width={620}
+          height={420}
+          className="h-8 w-auto"
+        />
       </button>
 
       <nav className="hidden md:flex gap-16 absolute left-1/2 transform -translate-x-1/2 ">
@@ -85,11 +80,18 @@ export const Header = () => {
         </div>
         <nav className="flex flex-col gap-8 p-8 items-center text-xl">
           <button
+            onClick={() => scrollToSection("menu")}
+            className="font-semibold text-[#f1a123] hover:text-white transition-colors"
+          >
+            MENU
+          </button>
+          <button
             onClick={() => scrollToSection("home")}
             className="font-semibold hover:text-white transition-colors"
           >
             ABOUT US
           </button>
+
           <button
             onClick={() => scrollToSection("reviews")}
             className="font-semibold hover:text-white transition-colors"
@@ -101,12 +103,6 @@ export const Header = () => {
             className="font-semibold hover:text-white transition-colors"
           >
             CONTACTS
-          </button>
-          <button
-            onClick={() => scrollToSection("menu")}
-            className="font-semibold text-[#f1a123] hover:text-white transition-colors"
-          >
-            MENU
           </button>
         </nav>
       </div>

@@ -40,7 +40,7 @@ export const ShakeOnItAndMojitoMadness = () => {
   return (
     <div className="flex flex-col justify-between ">
       <div className="flex flex-col justify-between bg-[#f1a123] relative z-0">
-        <div className="text-white px-4 pt-2 pb-14 relative overflow-hidden min-h-[300px] md:min-h-[400px]">
+        <div className="text-white px-4 md:px-8 pt-2 pb-14 relative overflow-hidden min-h-[300px] md:min-h-[400px]">
           <div className="relative z-10">
             <h2 className="text-3xl md:text-6xl font-extrabold text-start">
               SHAKE
@@ -65,7 +65,7 @@ export const ShakeOnItAndMojitoMadness = () => {
           />
         </div>
 
-        <div className="text-white bg-[#f1a123] px-4 pt-2 pb-14 relative overflow-hidden min-h-[300px] md:min-h-[400px]">
+        <div className="text-white bg-[#f1a123] px-4 md:px-8 pt-2 pb-14 relative overflow-hidden min-h-[300px] md:min-h-[400px]">
           <div className="relative z-10 text-end">
             <h2 className="text-3xl md:text-6xl font-extrabold">MOJITO</h2>
             <h2 className="text-3xl md:text-6xl font-extrabold">MADNESS</h2>

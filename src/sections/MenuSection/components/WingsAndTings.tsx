@@ -77,7 +77,7 @@ export const WingsAndTings = () => {
           </div>
         </div>
       </div>
-      <div className="text-[#f1a123] bg-white px-2 md:px-4 py-2 mt-4">
+      <div className="text-[#f1a123] bg-white px-4 md:px-8 py-2 mt-4">
         <h2 className="text-3xl md:text-6xl font-extrabold">SMASH</h2>
         <h2 className="text-3xl md:text-6xl font-extrabold">BOX</h2>
         <ul>

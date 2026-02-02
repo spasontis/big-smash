@@ -39,7 +39,7 @@ export const DontBeWafflinAndAddons = () => {
           ))}
         </ul>
       </div>
-      <div className="text-white bg-[#f1a123] px-4 py-2">
+      <div className="text-white bg-[#f1a123] px-4 md:px-8 py-2">
         <h2 className="text-3xl md:text-6xl font-extrabold text-center ">
           +ADD ONS
         </h2>
@@ -55,7 +55,7 @@ export const DontBeWafflinAndAddons = () => {
           ))}
         </ul>
       </div>
-      <div className="text-[#f1a123] px-4 py-2">
+      <div className="text-[#f1a123] py-2">
         <span className="flex justify-between items-center">
           <h2 className="text-5xl md:text-6xl font-extrabold">APPLE</h2>
           <h2 className="text-5xl md:text-3xl text-white font-bold bg-[#f1a123] px-4 py-2">

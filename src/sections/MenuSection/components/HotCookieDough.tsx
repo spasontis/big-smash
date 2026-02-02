@@ -23,7 +23,7 @@ export const HotCookieDough = () => {
 
   return (
     <div className="relative">
-      <div className="text-white px-4 pt-4 pb-24 border-20 border-[#f1a123] relative z-0 h-full">
+      <div className="text-white px-4 pt-4 pb-24 border-20 border-[#f1a123] relative z-0 h-full mb-64">
         <h2 className="text-3xl md:text-6xl font-extrabold">HOT</h2>
         <h2 className="text-3xl md:text-6xl font-extrabold">COOKIE</h2>
         <h2 className="text-3xl md:text-6xl font-extrabold">DOUGH</h2>

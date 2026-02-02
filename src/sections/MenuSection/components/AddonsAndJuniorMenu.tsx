@@ -4,7 +4,7 @@ import Image from "next/image";
 export const AddonsAndJuniorMenu = () => {
   return (
     <div className="flex flex-col gap-8 justify-between">
-      <div className="text-[#f1a123] bg-white px-4 py-2">
+      <div className="text-[#f1a123] bg-white px-4 md:px-8 py-2">
         <h2 className="text-3xl md:text-6xl font-extrabold text-center">
           + ADD ONS
         </h2>
@@ -60,7 +60,7 @@ export const AddonsAndJuniorMenu = () => {
         </ul>
       </div>
       <Image src={smashBurger} alt="Wings" width={500} height={500} />
-      <div className="text-white bg-[#f1a123] px-4 py-2">
+      <div className="text-white bg-[#f1a123] px-4 md:px-8 py-2">
         <h2 className="text-3xl md:text-6xl font-extrabold text-center">
           JUNIORS
         </h2>

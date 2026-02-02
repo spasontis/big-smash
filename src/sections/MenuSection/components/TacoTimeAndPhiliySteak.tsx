@@ -14,9 +14,10 @@ const tacos = [
 ];
 
 const houseSpecialItems = [
-  { name: "MINI SMASH BURGER", price: "6.99" },
-  { name: "FISH FINGERS", price: "5.49" },
-  { name: "CHICKEN NUGGETS", price: "5.49" },
+  { name: "GRILLED LAMB DONER WITH" },
+  { name: "MIXED PEPPERS, ONIONS," },
+  { name: "COOKED IN A SPECIAL SAUCE" },
+  { name: "SERVERD WITH FRIES & SALAD" },
 ];
 
 export const TacoTimeAndPhiliySteak = () => {
@@ -51,23 +52,23 @@ export const TacoTimeAndPhiliySteak = () => {
         sause
       </p>
 
-      <div className="text-white bg-[#f1a123] px-4 py-2">
+      <div className="text-white bg-[#f1a123] px-4 md:px-8 py-2">
         <h2 className="text-3xl md:text-5xl font-extrabold">HOUSE SPECIAL</h2>
         <h2 className="text-3xl md:text-5xl font-extrabold">DONER & FRIES</h2>
         <ul>
           {houseSpecialItems.map((item) => (
             <li
               key={item.name}
-              className="flex justify-between md:text-3xl text-2xl font-semibold"
+              className="flex justify-between md:text-2xl text-xl font-semibold"
             >
               <h1>{item.name}</h1>
-              <p>{item.price}</p>
             </li>
           ))}
         </ul>
+        <p className="text-2xl md:text-4xl font-extrabold">11.45</p>
       </div>
 
-      <div className="text-[#f1a123] bg-white px-4 py-2">
+      <div className="text-[#f1a123] bg-white px-4 md:px-8 py-2">
         <h2 className="text-5xl md:text-8xl font-extrabold">MAKE IT</h2>
         <h2 className="text-5xl md:text-8xl font-extrabold">A MEAL</h2>
         <div className="flex justify-between md:text-3xl text-2xl font-semibold">
